@@ -1,0 +1,74 @@
+{
+  "art": [
+    {
+      "id": "1",
+      "title": "Starry Night",
+      "price": "19.99",
+      "img": "/images/menu1.jpg"
+    },
+    {
+      "id": "2",
+      "title": "Sunflowers",
+      "price": "19.99",
+      "img": "/images/menu2.jpg"
+    },
+    {
+      "id": "3",
+      "title": "Mona Lisa",
+      "price": "19.99",
+      "img": "/images/menu3.jpg"
+    },
+    {
+      "id": "4",
+      "title": "The Last Supper",
+      "price": "19.99",
+      "img": "/images/menu4.jpg"
+    },
+    {
+      "id": "5",
+      "title": "Impression, Sunrise",
+      "price": "19.99",
+      "img": "/images/menu5.jpg"
+    },
+    {
+      "id": "6",
+      "title": "Water Lilies–Setting Sun",
+      "price": "19.99",
+      "img": "/images/menu6.jpg"
+    },
+    {
+      "id": "7",
+      "title": "The Persistence of Memory",
+      "price": "19.99",
+      "img": "/images/menu7.jpg"
+    },
+    {
+      "id": "8",
+      "title": "The Elephants",
+      "price": "19.99",
+      "img": "/images/menu8.jpg"
+    }
+  ],
+  "artist": [
+    {
+      "id": "1",
+      "name": "Vincent van Gogh",
+      "img": "/images/a1.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Leonardo da Vinci",
+      "img": "/images/a2.jpg"
+    },
+    {
+      "id": "3",
+      "name": " Claude Monet",
+      "img": "/images/a3.jpg"
+    },
+    {
+      "id": "4",
+      "name": "Salvador Dalí",
+      "img": "/images/a4.jpg"
+    }
+  ]
+}

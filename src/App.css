@@ -1,0 +1,187 @@
+/* Thiết lập nền nghệ thuật với gradient và hoạ tiết overlay */
+.app-container {
+  background: linear-gradient(rgba(44, 62, 80, 0.8), rgba(52, 73, 94, 0.8)),
+              url('/public/images/nen1.jpg') no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  font-family: 'Merriweather', serif;
+  color: #ecf0f1;
+  padding-top: 0; /* Xóa khoảng đệm trên */
+}
+
+/* Định dạng cho các tiêu đề */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+  color: #ecf0f1;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Navbar với màu nền tối và chữ sáng */
+.navbar {
+  background-color: #1f2f3f; /* Màu nền tối cho navbar */
+  border-bottom: 2px solid #2c3e50;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Thương hiệu Navbar */
+.navbar-brand {
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  font-size: 1.75em;
+  color: #ecf0f1 !important; /* Màu chữ sáng */
+}
+
+.navbar-brand:hover {
+  color: #bdc3c7 !important;
+}
+
+/* Liên kết trong Navbar */
+.nav-link, .nav-item a {
+  color: #bdc3c7 !important;
+  font-family: 'Merriweather', serif;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover, .nav-item a:hover {
+  color: #ecf0f1 !important; /* Màu sáng hơn khi hover */
+}
+
+/* Định dạng thanh tìm kiếm và nút tìm kiếm */
+.search-form {
+  display: flex;
+  align-items: center;
+  margin-top: 0;
+  padding: 0;
+}
+
+.search-form input {
+  width: 250px;
+  padding: 10px 15px;
+  border: 1px solid #7b6157;
+  border-radius: 25px 0 0 25px; /* Bo tròn góc trái */
+  background-color: #f5e4d5;
+  color: #3b2f2f;
+  font-family: 'Merriweather', serif;
+  transition: all 0.3s ease;
+}
+
+.search-form input::placeholder {
+  color: #a59483;
+}
+
+.search-form input:focus {
+  outline: none;
+  border-color: #5a443d;
+  background-color: #f0e0d5;
+}
+
+/* Định dạng nút tìm kiếm */
+.search-form button {
+  padding: 10px 20px;
+  border: 1px solid #7b6157;
+  background-color: #8b8378;
+  color: #f0ebe1;
+  border-radius: 0 25px 25px 0; /* Bo tròn góc phải */
+  font-family: 'Merriweather', serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  height: 100%;
+}
+
+.search-form button:hover {
+  background-color: #6b6158;
+  color: #f4efe9;
+}
+
+/* Định dạng các nút trong phần Art và Artist */
+.section-container .btn-primary, 
+.section-container .btn-danger, 
+.section-container .btn-success {
+  background: linear-gradient(135deg, #3a3a3a, #2f2f2f);
+  color: #f0f0f0;
+  border: none;
+  font-family: 'Merriweather', serif;
+  padding: 10px 20px;
+  font-size: 1em;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+  transition: background 0.4s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section-container .btn-primary:hover {
+  background: linear-gradient(135deg, #2b2b2b, #1f1f1f);
+  color: #d5d8dc;
+  transform: scale(1.1);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.6);
+}
+
+.section-container .btn-danger {
+  background: linear-gradient(135deg, #4a4a4a, #3a3a3a);
+  color: #f0f0f0;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+.section-container .btn-danger:hover {
+  background: linear-gradient(135deg, #3b3b3b, #2b2b2b);
+  color: #d5d8dc;
+}
+
+.section-container .btn-success {
+  background: linear-gradient(135deg, #2e2e2e, #232323);
+  color: #f0f0f0;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+.section-container .btn-success:hover {
+  background: linear-gradient(135deg, #1f1f1f, #141414);
+  color: #d5d8dc;
+}
+
+/* Footer tối hơn */
+.footer {
+  background-color: #1c2833;
+  color: #d5d8dc;
+  padding: 20px 0;
+  font-family: 'Merriweather', serif;
+}
+
+.footer-links a {
+  color: #d5d8dc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #aab7c4;
+}
+
+/* Carousel chiếm toàn bộ chiều rộng và che hết phần thừa */
+.carousel-container, .carousel {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  padding: 0;
+}
+
+.carousel img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Đảm bảo HistoryComponent che hết phần hai bên */
+.history-container {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.history-content {
+  max-width: 1200px; /* Đặt giới hạn chiều rộng nếu muốn */
+  margin: 0 auto;
+}
